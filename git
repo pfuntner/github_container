@@ -1,0 +1,4 @@
+# this is a shell script frontend to the real git command.  It requires that the git server be set up in a Docker container by https://wwwin-github.cisco.com/jpfuntne/githook/tree/master/server
+
+# You access the git server through ssh'ing to local port 52311 which is mapped to port 22 in the container
+GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 52311" /usr/bin/git "$@"
