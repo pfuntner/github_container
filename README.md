@@ -10,5 +10,11 @@ I created a frontend to `/usr/bin/git` that specifies the local port with which 
 From a client, I can do:
 
 ```
-{PATH_TO_SERVER_DIR}/git clone git@localhost:/home/git/gitwork.git
+$ github_container/git clone git@localhost:/home/git/gitwork.git
+Cloning into 'gitwork'...
+Warning: Permanently added '[localhost]:52311' (ECDSA) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+$
 ```
+
+Note there is a warning because the repo is empty but that's ok.  I might work on creating some content but I'm happy with it so far.
