@@ -15,6 +15,7 @@ start:
 # 	@echo "id_rsa: ${PWD}/id_rsa"
 # 	@echo 'Try:'
 # 	@echo 'GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 52311 -i id_rsa" git push -u test master'
+	@echo "Now try: ${PWD}/git clone git@localhost:/home/git/gitwork.git"
 
 clean: clean-containers clean-images
 
