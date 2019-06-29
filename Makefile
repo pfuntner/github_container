@@ -8,8 +8,8 @@ start:
 #	docker cp yaml_rule_check.py data:/home/git/test.git/hooks/pre-receive
 #	docker run -d -p 52311:22 --volumes-from data pre-receive.dev
 	docker run -d -p 52311:22 --name github git-server
-	docker cp github:/home/git/.ssh/id_rsa github_id_rsa
-	chmod 600 github_id_rsa
+#	docker cp github:/home/git/.ssh/id_rsa github_id_rsa
+#	chmod 600 github_id_rsa
 	docker exec github bash -c "echo `cat ~/.ssh/id_rsa.pub` >> /home/git/.ssh/authorized_keys"
 	# ./copy_hook.sh
 # 	@echo "id_rsa: ${PWD}/id_rsa"
